@@ -1,5 +1,5 @@
 <ul>
-  <% @list.each do |task| %>
+  <% @index.each do |task| %>
     <li><%= link_to task.title, task_path(task.id) %>  <%= link_to 'Destroy', task_path(task),
             data: { confirm:'Are you sure?'}, method: :delete %></li>
 
