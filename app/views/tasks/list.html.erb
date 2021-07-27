@@ -1,0 +1,6 @@
+<ul>
+  <% @list.each do |lis| %>
+    <li><%= link_to lis.title, task_path(lis.id) %></li>
+  <% end %>
+</ul>
+<%= link_to "Create a new task", new_task_path %>

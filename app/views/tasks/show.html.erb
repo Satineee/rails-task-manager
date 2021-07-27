@@ -1,0 +1,6 @@
+<h1><%= @detail.title %></h1>
+<%= @detail.details %>
+<br>
+<br>
+<%= link_to "See all tasks", tasks_path %>
+<%= link_to "Update the task", edit_task_path(@detail.id) %>

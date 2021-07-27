@@ -1,0 +1,13 @@
+<h1>Update</h1>
+
+<%= form_for(@task) do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+  </p>
+  <%= f.submit %>
+<% end %>
