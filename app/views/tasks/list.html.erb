@@ -1,6 +1,8 @@
 <ul>
-  <% @list.each do |lis| %>
-    <li><%= link_to lis.title, task_path(lis.id) %></li>
+  <% @list.each do |task| %>
+    <li><%= link_to task.title, task_path(task.id) %>  <%= link_to 'Destroy', task_path(task),
+            data: { confirm:'Are you sure?'}, method: :delete %></li>
+
   <% end %>
 </ul>
 <%= link_to "Create a new task", new_task_path %>
